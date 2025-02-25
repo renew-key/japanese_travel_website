@@ -6,9 +6,22 @@ $themeColor: rgba(152, 57, 255, 0.5);
     box-sizing: border-box;
 }
 
-h1,h2,h3,h4,h5,h6{
-    font-weight: normal;
-}
+body {
+    position: relative;
 
+    img.fixed-image{
+        min-height: 100vh;
+        position: fixed;
+        width: 100%;
+        z-index:-100;
+        bottom: 0;
+        left: 0;
+    }
+    h1,h2,h3,h4,h5,h6{
+        font-weight: normal;
+    }
+}
 @import "./header";
-@import "./home"
+@import "./home";
+@import "./footer";
+

@@ -1,33 +1,98 @@
-main {
-    section.background-image{
-        min-height: 70vh;
-        background-image: url("../images/日本櫻花.jpg");
-        background-size: cover;
-        background-position: center;
-        transition: all 0.75s ease;
-        position: relative;
-        z-index: 0;
-
-        display: flex;
-        justify-content: center; /* 水平置中 */
-        align-items: center; /* 垂直置中 */
-        // border: 3px red solid;
-
-        div.filter{
-            background-color: rgba(0,0,0,0.5);
-            width: 100%;
+body {
+    main {
+        section.background-image{
             min-height: 70vh;
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: -1;
+            background-image: url("../images/日本櫻花.jpg");
+            background-size: cover;
+            background-position: center;
+            transition: all 0.75s ease;
+            position: relative;
+            z-index: 0;
+    
+            display: flex;
+            justify-content: center; /* 水平置中 */
+            align-items: center; /* 垂直置中 */
+            // border: 3px red solid;
+    
+            div.filter{
+                background-color: rgba(0,0,0,0.5);
+                width: 100%;
+                min-height: 70vh;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -1;
+            }
+            h3{
+                // border: 3px blue solid;
+                color: white;
+                font-size: 2.5rem;
+                z-index: 1;
+                text-align: center;
+            }
         }
-        h3{
-            // border: 3px blue solid;
-            color: white;
-            font-size: 2.5rem;
-            z-index: 1;
+        section.info-circles{
+            background-color: white;
+            padding: 2rem 1rem;
+            h3{
+                text-align: center;
+                font-size: 2rem;
+            }
+    
+            div.circles{
+                // border: 2px solid black;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                div.circle{
+                    padding: 1rem;
+                    // border: 3px solid red;
+                    flex: 0 1 250px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    img{
+                        width: 80%;
+                        border-radius: 50%;
+                        transition: all 0.1s ease-in;
+                        padding: 0.3rem;
+                        &:hover{
+                            border:3px solid $themeColor;
+                        }
+                    }
+                }
+            }
+        }
+        section.empty-container{
+            min-height:70vh;
+            background-color: rgba(0,0,0,0.7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+            h3{
+                font-size: 2rem;
+                color: white;
+            }
+        }
+        section.google-map{
+            background-color: white;
+            padding: 2rem 1rem;
             text-align: center;
+            h3{
+                font-size: 2.5rem;
+            }
+            p{
+                font-size: 1.25rem;
+                margin:1rem ;
+            }
+            iframe{
+                width:100%;
+                height: 40vh;
+            }
         }
     }
 }
+

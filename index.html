@@ -3,28 +3,104 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
     <title>Travel recommendations for Japan</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./styles/style.css">
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
+    <link
+        rel="stylesheet"
+        href="./styles/style.css"
+    >
 
 </head>
 
 <body>
+    <img
+        class="fixed-image"
+        src="./images/富士山2.jpg"
+        alt="fixed-image"
+    >
     <header id="header"></header>
     <main>
-        <section class="background-image" id="carousel-img">
+        <section
+            class="background-image"
+            id="carousel-img"
+        >
             <h3>Leisure space, special holidays.<br /> plan a trip to Japan to relax and unwind.</h3>
             <div class="filter"></div>
         </section>
-    </main>
-    <!-- <footer id="footer"></footer> -->
+        <section class="info-circles">
+            <h3>Attraction Themes</h3>
+            <div class="circles">
+                <div class="circle">
+                    <img
+                        src="./images/北海道雪景.jpg"
+                        alt="Hokkaido Snow Scenery"
+                    >
+                    <p>The snow scenery in Hokkaido is breathtaking</p>
+                </div>
+                <div class="circle">
+                    <img
+                        src="./images/日本壽司.jpg"
+                        alt="Japanese Sushi"
+                    >
+                    <p>Authentic Japanese Sushi and Cuisine</p>
+                </div>
+                <div class="circle">
+                    <img
+                        src="./images/富士山.jpg"
+                        alt="Mount Fuji"
+                    >
+                    <p>Mount Fuji Scenery and Hot Springs</p>
+                </div>
+                <div class="circle">
+                    <img
+                        src="./images/清水寺.jpg"
+                        alt="Kiyomizu-dera Temple"
+                    >
+                    <p>Kiyomizu-dera Temple, Ancient Capital of Kyoto</p>
+                </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.8/axios.min.js"
+            </div>
+
+        </section>
+        <section class="empty-container">
+            <h3>Start planning your trip today and find the best option.</h3>
+        </section>
+        <section class="google-map">
+            <h3>Geographical Location of Japan</h3>
+            <p>
+                Japan is geographically part of Northeast Asia, facing the Pacific Ocean to the east and bordered by the
+                Sea of Japan, the Korea Strait, and the East China Sea to the west, as well as the warm southwestern
+                part of the Eurasian continent. It becomes colder as you go north.
+                In particular, during winter, the northwestern monsoon brings a lot of snow to the Sea of Japan side.
+                On the other hand, the Pacific side is often characterized by dry and clear weather, known as "winter
+                sunshine."
+            </p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27255158.220506288!2d137.15386460000002!3d33.5001886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34674e0fd77f192f%3A0xf54275d47c665244!2sJapan!5e0!3m2!1sen!2stw!4v1740448674560!5m2!1sen!2stw"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+        </section>
+    </main>
+    <footer id="footer"></footer>
+
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.8/axios.min.js"
         integrity="sha512-v8+bPcpk4Sj7CKB11+gK/FnsbgQ15jTwZamnBf/xDmiQDcgOIYufBo6Acu1y30vrk8gg5su4x0CG3zfPaq5Fcg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    ></script>
     <script src="./js/carousel.js"></script>
     <script src="./js/insert.js"></script>
 </body>
