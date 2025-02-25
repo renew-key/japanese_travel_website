@@ -1,0 +1,11 @@
+# 禁制爬整個網站
+# User-agent: *;
+# 禁制爬image資料夾
+# Disallow: /images/
+
+#User-agent: #Googlebot-news;
+#Disallow: /images/
+#Disallow: /* .xls$
+
+#User-agent: *;
+#Allow: /images/
